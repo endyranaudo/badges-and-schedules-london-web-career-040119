@@ -8,5 +8,5 @@ end
 
 def assign_rooms(attendees)
   room = 1..7.to_a
-  attendees.collect {|name, room| "Hello, #{name}! You'll be assigned to room #{room}!"}
+  attendees.collect {|name| "Hello, #{name}! You'll be assigned to room #{room.shift}!"}
 end
