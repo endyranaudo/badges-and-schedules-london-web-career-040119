@@ -3,5 +3,7 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(attendees)
-  attendees.collect {|name| new_arr.push(name)}
+  new_arr = []
+  attendees.each {|name| new_arr.push(name)}
+  new_arr
 end
