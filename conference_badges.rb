@@ -10,3 +10,7 @@ def assign_rooms(attendees)
   rooms = (1..7).to_a
   attendees.collect {|name| "Hello, #{name}! You'll be assigned to room #{rooms.shift}!"}
 end
+
+def printer
+  
+end
