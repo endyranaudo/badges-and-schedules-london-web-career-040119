@@ -7,5 +7,6 @@ def batch_badge_creator(attendees)
 end
 
 def assign_rooms(attendees)
+  room = 1..7.to_a
   attendees.collect {|name, room| "Hello, #{name}! You'll be assigned to room #{room}!"}
 end
